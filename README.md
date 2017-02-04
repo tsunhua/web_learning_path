@@ -12,7 +12,8 @@
 开发工具
 -------
 
-
+- [WAMP Server](http://www.wampserver.com/en/)：安装Windows下集成Apache、MySQL和PHP的集成环境
+- [PhpStorm](https://www.jetbrains.com/phpstorm/)：基于jetbrain开发的强大的PHP开发工具。[附带通用注册码](http://9iphp.com/web/php/jetbrains-phpstorm-all-editions-universal-license-keys-collection.html)
 
 第三方库
 -------
