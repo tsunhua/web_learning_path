@@ -7,13 +7,14 @@
 -------
 
 - [PHP之道](https://laravel-china.github.io/php-the-right-way/)
+- [PHP 新手指南](http://wiki.jikexueyuan.com/project/php/)
 - [PHP中文手册](https://secure.php.net/manual/zh/)
 
 开发工具
 -------
 
 - [WAMP Server](http://www.wampserver.com/en/)：安装Windows下集成Apache、MySQL和PHP的集成环境
-- [PhpStorm](https://www.jetbrains.com/phpstorm/)：基于jetbrain开发的强大的PHP开发工具。[附带通用注册码](http://9iphp.com/web/php/jetbrains-phpstorm-all-editions-universal-license-keys-collection.html)
+- [PhpStorm](https://www.jetbrains.com/phpstorm/)：基于jetbrain开发的强大的PHP开发工具。[附带通用注册码](http://idea.lanyus.com/)
 
 第三方库
 -------
