@@ -57,9 +57,25 @@ $products = [
     "Microsoft" => "Windows"
 ];
 $products['Google'] = "Android";
-echo $products['Google']."<br/>";
+echo $products['Google'] . "<br/>";
 
 //字符串
 $str = "中国你好！";
-echo strlen($str)."<br/>";
-echo strpos($str,"国")."<br/";//从0开始
+echo strlen($str) . "<br/>";
+echo strpos($str, "国") . "<br/";//从0开始
+
+//动态函数调用
+function sayHello()
+{
+    echo "<br/>Hello PHP ~<br/>";
+}
+
+function sayHi()
+{
+    echo "<br/>HI HTML ~<br/>";
+}
+
+$function_holder = 'sayHello';
+$function_holder();
+$function_holder = 'sayHi';
+$function_holder();
