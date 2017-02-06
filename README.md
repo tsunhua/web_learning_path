@@ -2,7 +2,7 @@
 -------
 
 - [Part01_原生PHP](https://github.com/LinLshare/php_learning_path/tree/master/part01_startup)
-- [Part02_ThinkPHP入门]()
+- [Part02_ThinkPHP入门](https://github.com/LinLshare/php_learning_path/tree/master/part02_thinkphp_startup)
 
 学习站点
 -------
