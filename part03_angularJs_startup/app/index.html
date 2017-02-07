@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--ng-app标明了Angular JS的作用域，标记在html表明为整个<html>-->
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+    <script src="js/angular-1.0.1.min.js"></script>
+    <script src="js/controller.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<!--{{}}表达式-->
+Hello {{'World'}}!
+<!--获取输入框的数据-->
+Your name: <input type="text" ng-model="yourname" placeholder="World">
+<hr>
+Hello {{yourname || 'World'}}!
+<br/>
+<p>1 + 2 = {{ 1 + 2 }}</p>
+<!--手动写列表-->
+<ul>
+    <li>
+        <span>Nexus S</span>
+        <p>
+            Fast just got faster with Nexus S.
+        </p>
+    </li>
+    <li>
+        <span>MOtorola XOOM with Wi-Fi</span>
+        <p>
+            The Next, Next Generation tablet.
+        </p>
+    </li>
+</ul>
+<p>Total number of phones: 2</p>
+<!--动态生成列表-->
+<ul ng-controller="PhoneListCtrl">
+    <!--遍历phones到phone中-->
+    <li ng-repeat="phone in phones">
+        {{phone.name}}
+        <p>{{phone.snippet}}</p>
+    </li>
+</ul>
+
+<!--迭代器过滤-->
+<div class="container-fluid" ng-controller="PhoneListCtrl">
+    <div class="flex-row">
+        <div class="span2">
+            <!--Sidebar content-->
+            Search: <input ng-model="query"/>
+        </div>
+        <div class="span10">
+            <!--Body content-->
+            <ul class="phones">
+                <li ng-repeat="phone in phones | filter:query">
+                    {{phone.name}}
+                    <p>{{phone.snippet}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!--双向绑定-->
+<div ng-controller="PhoneListCtrl2">
+    Search: <input ng-model="query">
+    Sort by:
+    <select ng-model="orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="age">Newest</option>
+    </select>
+
+    <ul class="phones">
+        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+            {{phone.name}}
+            <p>{{phone.snippet}}</p>
+        </li>
+    </ul>
+</div>
+
+<!--XHR和依赖注入-->
+<div ng-controller="PhoneListCtrl3">
+    Search: <input ng-model="query">
+    Sort by:
+    <select ng-model="orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="age">Newest</option>
+    </select>
+
+    <ul class="phones">
+        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+            {{phone.name}}
+            <p>{{phone.snippet}}</p>
+        </li>
+    </ul>
+    <!--以json格式观察phones的变化-->
+    {{phones | json }}
+</div>
+
+<!--链接与图片模板-->
+<div ng-controller="PhoneListCtrl3">
+    <ul class="phones">
+        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp" class="img-thumbnail">
+            <a href="#/phones/{{phone.id}}" class="thumb">
+                <!--这里之所以用ng-src属性，是因为AnglarJS只有在页面载入完毕后
+                才开始编译表达式从而得到正确的图片URL地址-->
+                <img ng-src="{{phone.imageUrl}}">
+            </a>
+            <a href="#/phones/{{phone.id}}">
+                {{phone.name}}
+            </a>
+            <p>{{phone.snippet}}</p>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

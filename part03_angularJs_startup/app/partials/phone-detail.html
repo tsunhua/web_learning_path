@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/angular-1.0.1.min.js"></script>
+    <script src="../js/controller.js"></script>
+    <title>Phone Detail</title>
+</head>
+<body ng-controller="PhoneDetailsCtrl">
+<!--此处的phoneId在app.js中定义-->
+<!--TBD: detail view for {{phoneId}}-->
+<!--更多模板部分-->
+<img ng-src="{{mainImageUrl}}" class="phone">
+<h1>{{phone.name}}</h1>
+<p>{{phone.description}}</p>
+<ul class="phone-thumbs">
+    <li ng-repeat="img in phone.images">
+        <img ng-src="{{img}}" ng-click="setImage(img)">
+    </li>
+</ul>
+
+<ul class="sepcs">
+    <li>
+        <span>Avaliability and Networks</span>
+        <dl>
+            <dt>
+                Avaliability
+            </dt>
+            <dd ng-repeat="availability in phone.availability">
+                {{availability}}
+            </dd>
+        </dl>
+        <dl>
+            <dt>Infrared</dt>
+            <dd>{{phone.connectivity.infrared | checkmark}}</dd>
+            <dt>GPS</dt>
+            <dd>{{phone.connectivity.gps|checkmark}}</dd>
+        </dl>
+    </li>
+    <!--...-->
+    <li>
+        <span>Additional Features</span>
+        <dd>{{phone.additionalFeatures}}</dd>
+    </li>
+</ul>
+<!--使用内置的过滤器-->
+<div>
+    <hr>
+    {{"lower cap string" | uppercase}}
+    <br>
+    {{{foo:"bar",baz:333} | json}}
+    <br>
+    {{1304375948024 |date}}
+    <br>
+    {{1304375948024 |date:"yyyy/MM/dd hh:mm"}}
+</div>
+
+<!--事件处理-->
+<div>
+    <button ng-click="hello('World')">Hello</button>
+</div>
+</body>
+</html>
