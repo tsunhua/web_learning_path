@@ -33,6 +33,7 @@
 -------
 
 - [ThinkPHP](http://www.thinkphp.cn/)：诞生于06年的一个开源轻量级PHP框架，创始人刘晨，16年9月释出V5.0。TP使用面向对象的开发结构和MVC模式，融合了Struts的Action和Dao思想、JSP的TagLib（标签库）、RoR的ORM映射和ActiveRecord模式，封装了CURD和一些常用操作，单一入口模式等，在模版引擎、缓存机制、认证机制和扩展性方面均有独特的表现。[[查看引用](http://www.csdn.net/article/2013-06-25/2815982-thinkphp-project-php-framework)]
+- [AngularJS](https://angularjs.org/)：一款开源JavaScript函式庫，由Google维护，用來协助单一应用程序运行的。它的目标是透過MVC模式（MVC）功能增强基于浏览器的应用，使开发和测试变得更加容易。
 - [Bootstrap](http://getbootstrap.com/)：一组用于网站和网络应用程序开发的开源前端框架，包括HTML、CSS及JavaScript的框架，提供字体排印、窗体、按钮、导航及其他各种组件及Javascript扩展，旨在使动态网页和Web应用的开发更加容易。
 
 
