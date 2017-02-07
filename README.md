@@ -2,7 +2,7 @@
 我的学习轨迹
 -------
 
-- [Part01_PHP入门](https://github.com/LinLshare/php_learning_path/tree/master/part01_startup)
+- [Part01_PHP入门](https://github.com/LinLshare/php_learning_path/tree/master/part01_php_startup)
 - [Part02_ThinkPHP入门](https://github.com/LinLshare/php_learning_path/tree/master/part02_thinkphp_startup)
 - [Part03_AngularJS入门](https://github.com/LinLshare/php_learning_path/tree/master/part03_angularJs_startup)
 
