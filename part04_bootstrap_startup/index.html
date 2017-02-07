@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+
+    <link rel="stylesheet" href="app/app.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-responsive.min.css">
+</head>
+<body>
+
+<!--阶段一：Hello world -------------------------------------------------->
+<h1>Hello, world!</h1>
+
+<!--阶段二：布局 ---------------------------------------------------------->
+<!--基本网格row, 流动网格row-fluid-->
+<div class="row show-grid">
+    <div class="span4">1</div>
+    <div class="span8">2</div>
+</div>
+
+<!--偏移栏-->
+<div class="row show-grid">
+    <div class="span4">3</div>
+    <div class="span3 offset3">4</div>
+</div>
+
+<!--嵌套布局-->
+<div class="row show-grid">
+    <div class="span9">
+        <div class="row show-grid">
+            第一级别
+            <div class="span6">第二级别</div>
+            <div class="span3">第二级别</div>
+        </div>
+    </div>
+</div>
+
+<!--固定布局, 宽度固定-->
+<div class="container show-grid">
+    <div class="show-grid">固定布局</div>
+</div>
+
+<!--流动布局-->
+<div class="container-fluid show-grid">
+    <div class="row-fluid ">
+        <div class="span2">边栏内容</div>
+        <div class="span10">主体内容</div>
+    </div>
+</div>
+<!--响应式设计-->
+<p>绿色对号表示在当前可视窗口中是可见的。</p>
+<ul class="responsive-utilities-test">
+    <li>智能手机<span class="visible-phone">&#10004; 智能手机</span></li>
+    <li>平板电脑<span class="visible-tablet">&#10004; 平板电脑</span></li>
+    <li>桌面电脑<span class="visible-desktop">&#10004; 桌面电脑</span></li>
+</ul>
+<p>绿色对号表示在当前可视窗口中是隐藏的。</p>
+<ul class="responsive-utilities-test hidden-on">
+    <li>智能手机<span class="hidden-phone">&#10004; 智能手机</span></li>
+    <li>平板电脑<span class="hidden-tablet">&#10004; 平板电脑</span></li>
+    <li>桌面电脑<span class="hidden-desktop">&#10004; 桌面电脑</span></li>
+</ul>
+
+
+<!--阶段三：基本CSS ---------------------------------------------------------->
+<!--文本排版-->
+<h2>标题2</h2>
+<p>
+    故事讲述汤姆从小就是个<em>玩牌高手</em>，所以他的<strong>好朋友</strong>，肥皂、艾迪和培根决定各凑两万五千英镑，让汤姆去参加一场黑社会高额赌金的牌局。
+</p>
+<p class="lead">
+    汤姆从头到尾不知情，其实整个赌金根本就是个大骗局。
+    <small>于是汤姆不但输光所有的钱，还倒欠赌场主人五十万英镑。汤姆在一个星期内不能还清，他和他朋友们的手指和他老爸的酒吧都将不保。汤姆一伙想尽各种可能的凑钱办法，最后决定抢劫隔壁的毒犯。</small>
+</p>
+
+<p class="text-left">左对齐</p>
+<p class="text-center">居中对齐</p>
+<p class="text-right">右对齐</p>
+<p class="muted">不强调文本</p>
+<p class="text-warning">警告状态文本</p>
+<p class="text-error">错误状态文本</p>
+<p class="text-info">信息提示文本</p>
+<p class="text-success">成功状态文本</p>
+
+<abbr title="Thanks" class="initialism">thx</abbr>
+
+<address>
+    <strong>XX科技公司</strong><br/>
+    广东，广州<br>
+    xx路 2333号<br>
+    110110110<br>
+    <strong>E-Mail</strong><br>
+    <a href="mailto:#">hello@example.com</a>
+</address>
+
+<div>
+    <blockquote>
+        <p>
+            这是引用别人的话这是引用别人的话这是引用别人的话这是引用别人的话这是引用别人的话
+            <small class="pull-right">引自<cite title="《全球百科》">《全球百科》</cite></small>
+        </p>
+    </blockquote>
+</div>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>属性</dt>
+        <dd>值</dd>
+    </dl>
+</div>
+
+<!--代码-->
+<div>
+    行内的一句代码<code>x = 3</code>
+    <br>
+    <pre>
+//&lt;p&gt;这是多行代码&lt;/p&gt;
+var x = 3;
+var y = 4;
+var z = x + y;</pre>
+</div>
+
+<!--表格
+ table: 默认样式
+ table-hover: 启用悬停状态
+ table-striped: 斑马纹表格
+ table-bordered: 圆角边框
+ table-condensed: 压缩显示表格，去掉一半的边距
+ -->
+
+<table class="table table-bordered table-hover table-striped">
+    <thead>
+    <tr class="success">
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="error">
+        <td>1</td>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+    </tr>
+    <tr class="warning">
+        <td>2</td>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+    </tr>
+    <tr class="info">
+        <td>3</td>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+    </tr>
+    </tbody>
+</table>
+
+<!--表单-->
+<form>
+    <fieldset>
+        <legend>Legend</legend>
+        <label>标签名</label>
+        <input type="text" placeholder="输入点东西...">
+        <span class="help-block">这里是区块级别的帮助文字。</span>
+        <label class="checkbox">
+            <input type="checkbox">勾选一下
+        </label>
+        <button type="submit" class="btn-info">提交</button>
+    </fieldset>
+</form>
+
+<form class="form-search">
+    <input type="text" class="input-medium search-query">
+    <button type="submit" class="btn">搜索</button>
+</form>
+
+<form class="form-inline">
+    <input type="text" class="input-small" placeholder="邮箱">
+    <input type="password" class="input-small" placeholder="密码">
+    <label class="checkbox">
+        <input type="checkbox">记住我
+    </label>
+    <button type="submit" class="btn">登录</button>
+</form>
+
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label" for="inputEmail">Email</label>
+        <div class="controls">
+            <input type="text" id="inputEmail" placeholder="Email">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="password">密码</label>
+        <div class="controls">
+            <input type="password" id="password" placeholder="密码">
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <label class="checkbox"><input type="checkbox">记住我</label>
+            <button class="btn">登录</button>
+        </div>
+    </div>
+</form>
+
+<form>
+    <textarea rows="3"></textarea>
+    <div>
+        <label class="radio inline">
+            <input type="radio" name="grp1" id="rd1" value="option1" checked>
+            选项一
+        </label>
+        <label class="radio inline">
+            <input type="radio" name="grp1" id="rd2" value="option2">
+            选项二
+        </label>
+    </div>
+
+    <select>
+        <option>电影</option>
+        <option>写作</option>
+        <option>睡觉</option>
+        <option>喝酒</option>
+        <option>吹牛</option>
+    </select>
+
+    <select multiple="multiple">
+        <option>电影</option>
+        <option>写作</option>
+        <option>睡觉</option>
+        <option>喝酒</option>
+        <option>吹牛</option>
+    </select>
+</form>
+
+<form>
+    <div class="input-prepend">
+        <span class="add-on">@</span>
+        <input class="span2" id="preInput" type="text" placeholder="用户名">
+    </div>
+    <div class="input-append">
+        <input class="span2" id="appInput" type="text">
+        <span class="add-on">.00</span>
+    </div>
+
+    <div class="input-append">
+        <div class="btn-group">
+            <input class="span2" type="text" placeholder="用户名">
+            @
+            <button class="btn dropdown-toggle" data-toggle="dropdown">
+                @qq.com
+                <span class="caret"></span>
+            </button>
+
+            <ul class="dropdown-menu">
+                <li>@qq.com</li>
+                <li>@163.com</li>
+                <li>@outlook.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <input class="input-mini controls-row error" type="text" placeholder="mini">
+        <input class="input-large controls-row uneditable-input info" type="text" placeholder="large">
+        <input class="input-block-level" type="text" placeholder=".input-block-level">
+    </div>
+
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary span2">保存修改</button>
+        <button type="button" class="btn span2">取消</button>
+    </div>
+    <input type="text" required><span class="help-inline">行内帮助文字</span>
+    <input type="text" disabled>
+</form>
+
+<!--按钮-->
+<a class="btn btn-danger" href="">链接按钮</a>
+<button class="btn btn-inverse btn-block">按钮</button>
+<img src="http://icon.solidot.org/images/topics/topiced.gif" class="img-rounded">
+<img src="http://icon.solidot.org/images/topics/topiced.gif" class="img-circle">
+
+<!--小图标-->
+<!--icon-white是白色版本的图标-->
+<i class="icon-share "></i>
+<a class="btn btn-small" href="#"><i class="icon-heart"></i>喜欢</a>
+
+<ul class="nav nav-list">
+    <li class="active"><a><i class="icon-home icon-white"></i>首页</a></li>
+    <li><a><i class="icon-book"></i>图书</a></li>
+    <li><a><i class="icon-pencil"></i>应用</a></li>
+    <li><a><i></i>其他</a></li>
+</ul>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
