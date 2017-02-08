@@ -4,3 +4,51 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
 ERR: 无法加载模块:Jingdian
 
+[ 2017-02-08T09:54:58+08:00 ] ::1 /jingdian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+ERR: 无法加载模块:Jingdian
+
+[ 2017-02-08T13:23:49+08:00 ] ::1 /jingdian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+ERR: 无法加载模块:Jingdian
+
+[ 2017-02-08T13:24:21+08:00 ] ::1 /jingdian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+ERR: 无法加载模块:Jingdian
+
+[ 2017-02-08T13:24:23+08:00 ] ::1 /jingdian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+ERR: 无法加载模块:Jingdian
+
+[ 2017-02-08T14:44:38+08:00 ] ::1 /Detail?id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+ERR: 无法加载模块:Detail
+
+[ 2017-02-08T14:48:34+08:00 ] ::1 /Detail?id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+ERR: 无法加载模块:Detail
+
+[ 2017-02-08T14:49:07+08:00 ] ::1 /Detail?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+ERR: 无法加载模块:Detail
+
+[ 2017-02-08T14:49:09+08:00 ] ::1 /Detail?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+ERR: 无法加载模块:Detail
+
