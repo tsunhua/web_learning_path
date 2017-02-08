@@ -1,8 +1,6 @@
-.pager span{
-    padding: 8px;
-}
-.pager a{
 
+body{
+    margin:8px;
 }
 
 .plist{clear:both;overflow:hidden;margin-top:3px}
@@ -33,24 +31,24 @@
     margin-left: 2.28%;
 }
 
-.list_tab_img li .uptime {
-    height: 1.167rem;
-    background: url(dotbg.gif) repeat-x 0 center;
-    text-align: center;
-    margin-top: 0.267rem
-}
+/*.list_tab_img li .uptime {*/
+    /*height: 1.167rem;*/
+    /*background: url(dotbg.gif) repeat-x 0 center;*/
+    /*text-align: center;*/
+    /*margin-top: 0.267rem*/
+/*}*/
 
-.list_tab_img li .uptime p {
-    width: 5rem;
-    height: 1.167rem;
-    line-height: 1.167rem;
-    text-align: center;
-    background: #94c8d7;
-    border-radius: 2px;
-    margin: 0 auto;
-    color: #FFF;
-    font-size: 0.8rem
-}
+/*.list_tab_img li .uptime p {*/
+    /*width: 5rem;*/
+    /*height: 1.167rem;*/
+    /*line-height: 1.167rem;*/
+    /*text-align: center;*/
+    /*background: #94c8d7;*/
+    /*border-radius: 2px;*/
+    /*margin: 0 auto;*/
+    /*color: #FFF;*/
+    /*font-size: 0.8rem*/
+/*}*/
 
 .list_tab_img li img, .new_tab_img li img {
     width: 100%;
@@ -170,19 +168,19 @@
     font-weight: 700
 }
 
-.list_tab_img li label.status, .vod-n-img .status {
-    background-image: url("status.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-    overflow: hidden;
-    line-height: 0;
-    background-size: 1.767rem 1.767rem;
-    width: 1.767rem;
-    height: 1.767rem;
-}
+/*.list_tab_img li label.status, .vod-n-img .status {*/
+    /*background-image: url("status.png");*/
+    /*background-repeat: no-repeat;*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*display: block;*/
+    /*overflow: hidden;*/
+    /*line-height: 0;*/
+    /*background-size: 1.767rem 1.767rem;*/
+    /*width: 1.767rem;*/
+    /*height: 1.767rem;*/
+/*}*/
 
 .list_tab_img li .picsize {
     position: relative;
@@ -263,7 +261,8 @@
     }
 
     .c-box {
-        margin: 0 2px 8px 2px;
+        margin-top: 8px;
+        margin-bottom: 8px;
         border: 1px solid #eee;
         border-radius: 5px;
         clear: both

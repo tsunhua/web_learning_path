@@ -24,11 +24,8 @@ class IndexController extends BaseController
             $params['p'] = 1;
         }
 
-//        $data = $Movies->where($condition)
-//            ->limit($params['page'] * 10, 10)->select();
-
         //数据分页
-// 进行分页数据查询 注意page方法的参数的前面部分是当前的页数使用 $_GET[p]获取
+        // 进行分页数据查询 注意page方法的参数的前面部分是当前的页数使用 $_GET[p]获取
         $list = $Movies->where($condition)->page($params['p'] . ',10')->select();
         $this->assign('data', $list);// 赋值数据集
         $count = $Movies->where($condition)->count();// 查询满足要求的总记录数
@@ -43,7 +40,7 @@ class IndexController extends BaseController
 
         $show = $Page->show();// 分页显示输出
         $this->assign('page', $show);// 赋值分页输出
-//        $this->assign('data', $data);
+        //$this->assign('data', $data);
         $this->display(); // 输出模板
 
     }

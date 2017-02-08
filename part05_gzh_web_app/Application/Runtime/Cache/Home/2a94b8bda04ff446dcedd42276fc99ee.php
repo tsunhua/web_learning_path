@@ -11,69 +11,23 @@
     <!--<link href="/Public/app/css/app.css" rel="stylesheet" type="text/css">-->
     <link href="/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="/Public/app/css/app.css" rel="stylesheet" type="text/css">
-    <style type="text/css">object, embed {
-        -webkit-animation-duration: .001s;
-        -webkit-animation-name: playerInserted;
-        -ms-animation-duration: .001s;
-        -ms-animation-name: playerInserted;
-        -o-animation-duration: .001s;
-        -o-animation-name: playerInserted;
-        animation-duration: .001s;
-        animation-name: playerInserted;
-    }
 
-    @-webkit-keyframes playerInserted {
-        from {
-            opacity: 0.99;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    @-ms-keyframes playerInserted {
-        from {
-            opacity: 0.99;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    @-o-keyframes playerInserted {
-        from {
-            opacity: 0.99;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes playerInserted {
-        from {
-            opacity: 0.99;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-
-    </style>
 </head>
 
 <body>
 
+<a name="header"></a>
+
 <div class="header">
     <div class="logo">
         <a href="/Home">
-            <img width="126" height="35" alt="logo" src="http://icon.solidot.org/images/topics/topicspace.gif">
+            <img width="100" height="20" alt="logo" src="http://icon.solidot.org/images/topics/topicspace.gif">
         </a>
     </div>
     <form id="ffsearch" name="ffsearch" method="post" action="/plus/search.php">
-        <div class="container-fluid">
-            <div class="input-append row-fluid">
-                <input type="text" class="span11" placeholder="输入影片名进行搜索" name="q">
+        <div class="row-fluid">
+            <div class="pull-right input-append">
+                <input type="text" placeholder="输入影片名进行搜索" name="q">
                 <button class="btn" type="button">搜索</button>
             </div>
         </div>
@@ -113,8 +67,16 @@
 
 <div id="content">
     <div class="c-box" id="resize_list">
-        <div class="title" align="center"><h2>热门最新电影推荐：</h2></div>
-        <div class="plist">
+        <!--<div class="page-header">-->
+        <!--<h3>热门最新电影推荐：</h3>-->
+        <!--</div>-->
+        <div class="title" align="center">
+            <h2>
+                <?php
+ if($cat=='zuixin'){ echo '热门最新电影推荐：'; }elseif($cat=='jingdian'){ echo '经典电影推荐：'; }elseif($cat == 'renwu'){ echo '人物系列推荐：'; }elseif($cat == 'dianshiju'){ echo '综艺推荐：'; }elseif($cat == 'zongyi'){ echo '电视剧推荐：'; }elseif($cat == 'yanchanghui'){ echo '演唱会推荐：'; } ?>
+            </h2>
+        </div>
+        <div class="plist" align="center">
             <ul class="list_tab_img">
                 <?php
  foreach( $data as $item){ echo '<li><a href="/Home/Detail?id='.$item['id'].'">
@@ -131,7 +93,7 @@
             <!--<a class="num btn btn-small" href="/index.php/Home/Index/index/p/2.html">2</a>-->
             <!--<a class="num btn  btn-small" href="/index.php/Home/Index/index/p/3.html">3</a>-->
             <!--<a class="next btn  btn-small"-->
-               <!--href="/index.php/Home/Index/index/p/2.html">下一页</a>-->
+            <!--href="/index.php/Home/Index/index/p/2.html">下一页</a>-->
             <?php
  $d= mb_ereg_replace('span','a',$page); $d = mb_ereg_replace('current','current btn-success',$d); echo mb_ereg_replace('class="','class="btn btn-small ',$d); ?>
 
