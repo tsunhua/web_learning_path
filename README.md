@@ -6,6 +6,8 @@
 - [Part02_ThinkPHP入门](https://github.com/LinLshare/php_learning_path/tree/master/part02_thinkphp_startup)
 - [Part03_AngularJS入门](https://github.com/LinLshare/php_learning_path/tree/master/part03_angularJs_startup)
 - [Part04_Bootstrap入门](https://github.com/LinLshare/php_learning_path/tree/master/part04_bootstrap_startup)
+- [Part05_项目实战：视频点播网站](https://github.com/LinLshare/php_learning_path/tree/master/part05_gzh_web_app)
+
 
 
 学习站点
