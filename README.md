@@ -21,6 +21,7 @@
 - [Javascript压缩原理及压缩工具收集](http://www.cnbruce.com/blog/showlog.asp?log_id=1389)
 - [Bootstrap开发文档](http://bootstrap.ninghao.net/index.html)
 - [CSS 架构 - 陈三](https://www.zfanw.com/blog/css-architecture.html)
+- [编写如一、符合习惯的CSS的原则](https://github.com/necolas/idiomatic-css/tree/master/translations/zh-CN)
 
 
 
