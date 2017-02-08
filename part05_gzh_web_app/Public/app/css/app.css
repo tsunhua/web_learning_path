@@ -1,3 +1,10 @@
+.pager span{
+    padding: 8px;
+}
+.pager a{
+
+}
+
 .plist{clear:both;overflow:hidden;margin-top:3px}
 .plist li a{ font-size:0.86667rem;}
 /*视频三图 */

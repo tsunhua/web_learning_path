@@ -7,10 +7,10 @@
     <title>GZH</title>
     <meta name="description" content="想看什么电影，关注公众号，告诉我们电影名称"/>
     <meta name="keywords" content="电影"/>
-    <link href="__PUBLIC__/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="__PUBLIC__/app/css/app.css" rel="stylesheet" type="text/css">
-    <!--<link href="/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
-    <!--<link href="/Public/app/css/app.css" rel="stylesheet" type="text/css">-->
+    <!--<link href="__PUBLIC__/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+    <!--<link href="__PUBLIC__/app/css/app.css" rel="stylesheet" type="text/css">-->
+    <link href="/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/Public/app/css/app.css" rel="stylesheet" type="text/css">
     <style type="text/css">object, embed {
         -webkit-animation-duration: .001s;
         -webkit-animation-name: playerInserted;
@@ -165,16 +165,28 @@
                 ?>
             </ul>
         </div>
-        <div class="pager">
-            {$page}
+        <div class="pager pagination">
+            <!--<a class="current btn-success btn btn-small btn">1</a>-->
+            <!--<a class="num btn btn-small" href="/index.php/Home/Index/index/p/2.html">2</a>-->
+            <!--<a class="num btn  btn-small" href="/index.php/Home/Index/index/p/3.html">3</a>-->
+            <!--<a class="next btn  btn-small"-->
+               <!--href="/index.php/Home/Index/index/p/2.html">下一页</a>-->
+            <?php
+            $d=  mb_ereg_replace('span','a',$page);
+            $d = mb_ereg_replace('current','current btn-success',$d);
+            echo mb_ereg_replace('class="','class="btn btn-small ',$d);
+            ?>
+
         </div>
+
     </div>
+</div>
 </div>
 
 <!--<div class="profile_info">-->
-    <!--<a id="weui_btn" class="btn btn-block btn-info" href="http://www.58look.cn/dianying/">-->
-        <!--<div class="profile_opr">点击更多热门电影</div>-->
-    <!--</a>-->
+<!--<a id="weui_btn" class="btn btn-block btn-info" href="http://www.58look.cn/dianying/">-->
+<!--<div class="profile_opr">点击更多热门电影</div>-->
+<!--</a>-->
 <!--</div>-->
 
 <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

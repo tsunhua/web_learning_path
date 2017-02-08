@@ -7,6 +7,8 @@
     <title>GZH</title>
     <meta name="description" content="想看什么电影，关注公众号，告诉我们电影名称"/>
     <meta name="keywords" content="电影"/>
+    <!--<link href="/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+    <!--<link href="/Public/app/css/app.css" rel="stylesheet" type="text/css">-->
     <link href="/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="/Public/app/css/app.css" rel="stylesheet" type="text/css">
     <style type="text/css">object, embed {
@@ -82,17 +84,32 @@
     <div class="nav-wrapper">
         <ul class="nav nav-tabs">
             <?php
- if ($cat == 'zuixin') { echo "<li class='active'><a href='/Home'>最新电影</a></li>"; } else { echo "<li><a href='/Home'>最新电影</a></li>"; } if ($cat == 'jingdian') { echo "<li class='active'><a href='/Home?cat=jingdian'>经典合集</a></li>"; } else { echo "<li><a href='/Home?cat=jingdian'>经典合集</a></li>"; } if ($cat == 'renwu') { echo "<li  class='active'><a href='/Home?cat=renwu'>人物系列</a></li>"; } else { echo "<li><a href='/Home?cat=renwu'>人物系列</a></li>"; } if ($cat == 'zongyi') { echo "<li  class='active'><a href='/Home?cat=zongyi'>综艺</a></li>"; } else { echo "<li><a href='/Home?cat=zongyi'>综艺</a></li>"; } if ($cat == 'dianshiju') { echo "<li  class='active'><a href='/Home?cat=dianshiju'>电视剧</a></li>"; } else { echo "<li><a href='/Home?cat=dianshiju'>电视剧</a></li>"; } if ($cat == 'yanchanghui') { echo "<li  class='active'><a href='/Home?cat=yanchanghui'>演唱会</a></li>"; } else { echo "<li><a href='/Home?cat=yanchanghui'>演唱会</a></li>"; } ?>
+ if ($cat == 'zuixin') { echo "<li class='active'><a href='/Home'>最新电影</a></li>"; } else { echo "
+            <li><a href='/Home'>最新电影</a></li>
+            "; } if ($cat == 'jingdian') { echo "
+            <li class='active'><a href='/Home?cat=jingdian'>经典合集</a></li>
+            "; } else { echo "
+            <li><a href='/Home?cat=jingdian'>经典合集</a></li>
+            "; } if ($cat == 'renwu') { echo "
+            <li class='active'><a href='/Home?cat=renwu'>人物系列</a></li>
+            "; } else { echo "
+            <li><a href='/Home?cat=renwu'>人物系列</a></li>
+            "; } if ($cat == 'zongyi') { echo "
+            <li class='active'><a href='/Home?cat=zongyi'>综艺</a></li>
+            "; } else { echo "
+            <li><a href='/Home?cat=zongyi'>综艺</a></li>
+            "; } if ($cat == 'dianshiju') { echo "
+            <li class='active'><a href='/Home?cat=dianshiju'>电视剧</a></li>
+            "; } else { echo "
+            <li><a href='/Home?cat=dianshiju'>电视剧</a></li>
+            "; } if ($cat == 'yanchanghui') { echo "
+            <li class='active'><a href='/Home?cat=yanchanghui'>演唱会</a></li>
+            "; } else { echo "
+            <li><a href='/Home?cat=yanchanghui'>演唱会</a></li>
+            "; } ?>
         </ul>
     </div>
 </header>
-
-<!--<DIV align="center">-->
-<!--<a href="/uploads/170118/4-1F11R3335DP.jpg">-->
-<!--<img src="/uploads/170118/4-1F11R333102L.jpg" width="100%" border="0"/>-->
-<!--</a>-->
-<!--</DIV>-->
-
 
 <div id="content">
     <div class="c-box" id="resize_list">
@@ -109,91 +126,24 @@
                 </li>'; } ?>
             </ul>
         </div>
-        <div class="pager">
-            <?php echo ($page); ?>
+        <div class="pager pagination">
+            <!--<a class="current btn-success btn btn-small btn">1</a>-->
+            <!--<a class="num btn btn-small" href="/index.php/Home/Index/index/p/2.html">2</a>-->
+            <!--<a class="num btn  btn-small" href="/index.php/Home/Index/index/p/3.html">3</a>-->
+            <!--<a class="next btn  btn-small"-->
+               <!--href="/index.php/Home/Index/index/p/2.html">下一页</a>-->
+            <?php
+ $d= mb_ereg_replace('span','a',$page); $d = mb_ereg_replace('current','current btn-success',$d); echo mb_ereg_replace('class="','class="btn btn-small ',$d); ?>
+
         </div>
+
     </div>
 </div>
-
-<!--<DIV align="center">-->
-<!--<font color="red"><b>➷想看什么电影，关注下面公众号↓↓告诉我们电影名称⇙</b></font>-->
-<!--<font color="blue"><b>➷假如有哪部电影失效了↓↓也告诉我们电影名称⇙</b></font>-->
-<!--<img src="/uploads/161123/4-161123161142I5.jpg" width="100%" border="0"/>-->
-<!--<font color="red"><b>▲长按二维码“识别”关注▲</b></font>-->
-<!--</DIV>-->
-
-<div class="profile_info">
-    <a id="weui_btn" class="btn btn-block btn-info" href="http://www.58look.cn/dianying/">
-        <div class="profile_opr">点击更多热门电影</div>
-    </a>
 </div>
 
-
-<!--<div id="content">-->
-<!--<div class="c-box" id="resize_list">-->
-<!--<div class="title"><h2>热门电视剧推荐：</h2></div>-->
-<!--<div class="plist">-->
-<!--<ul class="list_tab_img">-->
-
-<!--<li>-->
-<!--<a href="/dianshiju/_shentanxialuoke4_/">-->
-<!--<div class="picsize">-->
-<!--<img src="/uploads/170105/4-1F105015K4b2.JPG">-->
-<!--<label class="title"></label>-->
-<!--<label class="name">《神探夏洛克4》</label>-->
-<!--</div>-->
-<!--</a>-->
-<!--</li>-->
-<!--</ul>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-
-
-<!--<DIV align="center">-->
-<!--<a href="http://mp.weixin.qq.com/s/nPiTn4pv2d2lqVoUKAS3vw">-->
-<!--<img src="/uploads/161125/4-161125115555431.jpg" width="100%" border="0"/>-->
-<!--</a>-->
-<!--</DIV>-->
-
-
 <!--<div class="profile_info">-->
-<!--<a id="weui_btn" href="http://www.58look.cn/dianshiju/">-->
-<!--<div class="profile_opr">点击更多电视剧</div>-->
-<!--</a>-->
-<!--</div>-->
-
-<!--<div id="content">-->
-<!--<div class="c-box" id="resize_list">-->
-<!--<div class="title"><h2>热门演唱会推荐：</h2></div>-->
-<!--<div class="plist">-->
-<!--<ul class="list_tab_img">-->
-
-<!--<li>-->
-<!--<a href="/yanchanghui/BEYOND/">-->
-<!--<div class="picsize">-->
-<!--<img src="/uploads/161031/4-161031005R53a.jpg">-->
-<!--<label class="title"></label>-->
-<!--<label class="name">BEYOND</label>-->
-<!--</div>-->
-<!--</a>-->
-<!--</li>-->
-<!--</ul>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-
-
-<!--<DIV align="center">-->
-<!--<a href="http://mp.weixin.qq.com/s/nPiTn4pv2d2lqVoUKAS3vw">-->
-<!--<img src="/uploads/161125/4-161125115555431.jpg" width="100%" border="0"/>-->
-<!--</a>-->
-<!--</DIV>-->
-
-
-<!--<div class="profile_info">-->
-<!--<a id="weui_btn" href="http://www.58look.cn/yanchanghui/">-->
-<!--<div class="profile_opr">点击更多演唱会</div>-->
+<!--<a id="weui_btn" class="btn btn-block btn-info" href="http://www.58look.cn/dianying/">-->
+<!--<div class="profile_opr">点击更多热门电影</div>-->
 <!--</a>-->
 <!--</div>-->
 
@@ -204,8 +154,7 @@
         top.location = self.location;//防止页面被框架包含
     }
 </script>
-<div id="footer">Copyright &copy; GZH | <a href="#header">回到顶部</a> 如有侵权请发邮件至：ys933@qq.com 我们会及时删除侵权内容，谢谢合作。</div>
-
+<div id="footer">Copyright &copy; GZH | <a href="#header">回到顶部</a> 如有侵权请发邮件至: 我们会及时删除侵权内容，谢谢合作。</div>
 
 </div></div></div></div></div>
 

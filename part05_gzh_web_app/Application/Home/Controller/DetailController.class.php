@@ -23,5 +23,6 @@ class DetailController extends BaseController
         $data = $Movies->where('id=' . $id)->select();
         $this->assign('data' ,$data[0]);
         $this->display();
+
     }
 }
